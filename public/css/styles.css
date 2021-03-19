@@ -1,0 +1,160 @@
+ html,body{
+   background-image: url("https://static.vecteezy.com/system/resources/previews/001/339/293/non_2x/bank-card-background-free-vector.jpg");
+   height: 100%;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+ }
+ /*Home Page*/
+ .heading{
+   font-family: 'Ubuntu', sans-serif;
+   font-size :48px;
+   font-weight: bold;
+   margin-left: 200px;
+   margin-right: 600px;
+   background-color: #ffff00;
+   color: #000;
+ }
+
+ .homeButtons {
+   padding-left: 350px;
+   padding-top: 40px;
+ }
+.img{
+  padding-left: 320px;
+  padding-top: 50px;
+}
+.img img{
+  border-radius: 10%;
+}
+/*view Customers Page*/
+
+.viewCustomersHeading{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+  margin-left: 140px;
+  margin-top: 10px;
+}
+.viewCustomersTable {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  border-radius: 10%;
+  margin-left: 90px;
+  margin-top: 30px;
+  width:35%;
+}
+
+.viewCustomersButton{
+  margin: 20px 250px;
+}
+.viewCustomersTable table {
+  background-color: #66ff33;
+  border-collapse: collapse;
+}
+th,tr,td {
+  border: 2px solid black;
+}
+.viewCustomersTable th {
+  background-color: #4CAF50;
+  color: white;
+  height: 50px;
+}
+ .viewCustomersTable td{
+  padding: 5px;
+  text-align: left;
+}
+.viewCustomersTable tr:hover {
+  background-color:yellow;
+}
+
+/*transaction Page*/
+.transactionHeading{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+  margin-left: 100px;
+}
+.transactionForm {
+  margin-left: 50px;
+}
+.transactionForm h4{
+  color: #ffff33;
+  font-weight: bold;
+}
+.transactionButton{
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.transactionTable{
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.transactionTable td{
+  padding: 5px;
+}
+.transactionTable table {
+  background-color: #66ff33;
+  border-collapse: collapse;
+}
+
+.transactionTable th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+.transactionTable tr:hover {
+  background-color:yellow;
+}
+
+/*transaction Status*/
+.transactionMessage {
+  font-family: 'Redressed', cursive;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: #ffff00;
+}
+.transactionStatusButton {
+  margin-left: 600px;
+  margin-top: 50px;
+}
+.viewTransactionHeading {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: white;
+  margin-left: 150px;
+  margin-top: 10px;
+}
+.viewTransactionTable {
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+  margin-right: 200px;
+}
+.viewTransactionTable td{
+  padding: 5px;
+}
+.viewTransactionTable table {
+  background-color: #66ff33;
+  border-collapse: collapse;
+}
+
+.viewTransactionTable th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+.viewTransactionTable tr:hover {
+  background-color:yellow;
+}
