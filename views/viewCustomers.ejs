@@ -1,0 +1,29 @@
+<%- include("partials/header"); -%>
+<div class="viewCustomersHeading">
+  <h1>CUSTOMERS OF BANK</h1>
+</div>
+<div class="viewCustomersTable">
+  <table>
+    <tr>
+      <th>Account Number</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Balance</th>
+    </tr>
+  <%element.forEach(function(temp){%>
+    <tr>
+      <td><p><%=temp.AccNo%></p></td>
+      <td><p><%=temp.Name%></p></td>
+      <td><p><%=temp.Email%></p></td>
+      <td><p><%=temp.Balance%></p></td>
+    </tr>
+  <%})%>
+  </table>
+</div>
+<div class="viewCustomersButton">
+    <button class="btn btn-light" type="button" name="button"><a href="/transaction">Make a transaction</a></button>
+</div>
+<div class="viewCustomersButton">
+    <button class="btn btn-light"  type="button" name="button"><a href="/">Home</a></button>
+</div>
+<%- include("partials/footer"); -%>

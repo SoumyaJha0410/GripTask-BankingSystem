@@ -1,0 +1,48 @@
+<%- include("partials/header"); -%>
+<div class="transactionHeading">
+  <h1>TRANSFER MONEY</h1>
+</div>
+<div class="transactionForm">
+  <form action="/transaction" method="post">
+    <label for="user1"><h4>Choose customer1 (From):</h4></label>
+  <select name="user1" id="user1">
+    <%element.forEach(function(temp){%>
+       <option value=<%=temp.Name%>><%=temp.Name%></option>
+      <%})%>
+  </select><br>
+  <label for="user2"><h4>Choose customer2 (To):</h4></label>
+  <select name="user2" id="user2">
+  <%element.forEach(function(temp){%>
+     <option value=<%=temp.Name%>><%=temp.Name%></option>
+    <%})%>
+  </select><br>
+    <label for="amount"><h4>Enter the amount to be transfered :</h4></label>
+    <input type="text" name="amount"><br>
+    <div class="transactionButton">
+          <input class="btn btn-light"type="submit" name="submit" value="Transfer">
+    </div>
+  </form>
+</div>
+<div class="transactionTable">
+  <table border="1">
+    <tr>
+      <th>Account Number</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Balance</th>
+    </tr>
+  <%element.forEach(function(temp){%>
+    <tr>
+      <td><p><%=temp.AccNo%></p></td>
+      <td><p><%=temp.Name%></p></td>
+      <td><p><%=temp.Email%></p></td>
+      <td><p><%=temp.Balance%></p></td>
+    </tr>
+  <%})%>
+  </table>
+</div>
+<div class="transactionButton">
+    <button class="btn btn-light" type="button" name="button"><a href="/">Home</a></button>
+</div>
+
+<%- include("partials/footer"); -%>
